@@ -5,6 +5,13 @@ public class FizzBuzz {
         boolean isThreeTimes=num % 3==0;
         boolean isFiveTimes=num % 5==0;
         boolean isSevenTimes=num%7==0;
+        boolean isNumContainThree=String.valueOf(num).contains("3");
+        if(isNumContainThree){
+            return "Fizz";
+        }
+        if(isThreeTimes&&isFiveTimes&&isSevenTimes){
+            return "FizzBuzzWhizz";
+        }
         if(isThreeTimes&&isFiveTimes){
             return "FizzBuzz";
         }

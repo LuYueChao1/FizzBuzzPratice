@@ -48,11 +48,25 @@ public class PratiaceTest {
         assertEquals("FizzWhizz",fizzBuzzResult);
     }
     @Test
-    public void should_return_BuzzWhizz_when_input_number_35(){
-        int number=35;
+    public void should_return_BuzzWhizz_when_input_number_70(){
+        int number=70;
         FizzBuzz fizzBuzz=new FizzBuzz();
         String fizzBuzzResult= fizzBuzz.fizzBuzz(number);
         assertEquals("BuzzWhizz",fizzBuzzResult);
+    }
+    @Test
+    public void should_return_FizzBuzzWhizz_when_input_number_105(){
+        int number=105;
+        FizzBuzz fizzBuzz=new FizzBuzz();
+        String fizzBuzzResult= fizzBuzz.fizzBuzz(number);
+        assertEquals("FizzBuzzWhizz",fizzBuzzResult);
+    }
+    @Test
+    public void should_return_Fizz_when_input_number_contain_3(){
+        int number=13;
+        FizzBuzz fizzBuzz=new FizzBuzz();
+        String fizzBuzzResult= fizzBuzz.fizzBuzz(number);
+        assertEquals("Fizz",fizzBuzzResult);
     }
 
 
