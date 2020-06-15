@@ -47,6 +47,13 @@ public class PratiaceTest {
         String fizzBuzzResult= fizzBuzz.fizzBuzz(number);
         assertEquals("FizzWhizz",fizzBuzzResult);
     }
+    @Test
+    public void should_return_BuzzWhizz_when_input_number_35(){
+        int number=35;
+        FizzBuzz fizzBuzz=new FizzBuzz();
+        String fizzBuzzResult= fizzBuzz.fizzBuzz(number);
+        assertEquals("BuzzWhizz",fizzBuzzResult);
+    }
 
 
 }

@@ -11,6 +11,9 @@ public class FizzBuzz {
         if(isThreeTimes&&isSevenTimes){
             return "FizzWhizz";
         }
+        if(isFiveTimes&&isSevenTimes){
+            return "BuzzWhizz";
+        }
         if(isThreeTimes){
             return "Fizz";
         }
