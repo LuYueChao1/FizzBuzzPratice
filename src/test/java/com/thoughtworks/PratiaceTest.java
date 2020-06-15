@@ -77,10 +77,17 @@ public class PratiaceTest {
     }
     @Test
     public void should_ignore_number_divided_by_3_when_input_number_contain_5(){
-        int number=75;
+        int number=150;
         FizzBuzz fizzBuzz=new FizzBuzz();
         String fizzBuzzResult= fizzBuzz.fizzBuzz(number);
         assertEquals("Buzz",fizzBuzzResult);
+    }
+    @Test
+    public void dont_ignore_number_divided_by_3_when_input_number_contain_7(){
+        int number=75;
+        FizzBuzz fizzBuzz=new FizzBuzz();
+        String fizzBuzzResult= fizzBuzz.fizzBuzz(number);
+        assertEquals("FizzBuzz",fizzBuzzResult);
     }
 
 }

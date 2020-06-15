@@ -7,9 +7,13 @@ public class FizzBuzz {
         boolean isSevenTimes=num%7==0;
         boolean isNumContainThree=String.valueOf(num).contains("3");
         boolean isNumContainFive=String.valueOf(num).contains("5");
+        boolean isNumContainSeven=String.valueOf(num).contains("7");
         if(isNumContainFive){
             isNumContainThree=false;
             isThreeTimes=false;
+        }
+        if(isNumContainSeven){
+            isThreeTimes=num % 3==0;
         }
         if(isNumContainThree){
             return "Fizz";
