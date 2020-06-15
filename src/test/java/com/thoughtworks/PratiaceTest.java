@@ -20,15 +20,15 @@ public class PratiaceTest {
     }
 
     @Test
-    public void should_return_Buzz_given_5_when_fizzPuzz(){
+    public void should_return_Buzz_given_5_when_fizzBuzz(){
         int number=5;
         FizzBuzz fizzBuzz=new FizzBuzz();
         String fizzBuzzResult= fizzBuzz.fizzBuzz(number);
         assertEquals("Buzz",fizzBuzzResult);
     }
     @Test
-    public void should_return_FizzBuzz_given_15_when_fizzPuzz(){
-        int number=15;
+    public void should_return_FizzBuzz_given_15_when_fizzBuzz(){
+        int number=60;
         FizzBuzz fizzBuzz=new FizzBuzz();
         String fizzBuzzResult= fizzBuzz.fizzBuzz(number);
         assertEquals("FizzBuzz",fizzBuzzResult);
@@ -56,7 +56,7 @@ public class PratiaceTest {
     }
     @Test
     public void should_return_FizzBuzzWhizz_when_input_number_105(){
-        int number=105;
+        int number=210;
         FizzBuzz fizzBuzz=new FizzBuzz();
         String fizzBuzzResult= fizzBuzz.fizzBuzz(number);
         assertEquals("FizzBuzzWhizz",fizzBuzzResult);
@@ -68,6 +68,19 @@ public class PratiaceTest {
         String fizzBuzzResult= fizzBuzz.fizzBuzz(number);
         assertEquals("Fizz",fizzBuzzResult);
     }
-
+    @Test
+    public void should_ignore_number_contain_3_when_input_number_contain_5(){
+        int number=35;
+        FizzBuzz fizzBuzz=new FizzBuzz();
+        String fizzBuzzResult= fizzBuzz.fizzBuzz(number);
+        assertEquals("BuzzWhizz",fizzBuzzResult);
+    }
+    @Test
+    public void should_ignore_number_divided_by_3_when_input_number_contain_5(){
+        int number=75;
+        FizzBuzz fizzBuzz=new FizzBuzz();
+        String fizzBuzzResult= fizzBuzz.fizzBuzz(number);
+        assertEquals("Buzz",fizzBuzzResult);
+    }
 
 }
