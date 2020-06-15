@@ -12,7 +12,7 @@ public class PratiaceTest {
     }
 
     @Test
-    public void shuld_return_Fizz_given_3_when_fizzPuzz(){
+    public void should_return_Fizz_given_3_when_fizzPuzz(){
         int number=3;
         FizzBuzz fizzBuzz=new FizzBuzz();
         String fizzBuzzResult= fizzBuzz.fizzBuzz(number);
@@ -20,17 +20,26 @@ public class PratiaceTest {
     }
 
     @Test
-    public void shuld_return_Buzz_given_5_when_fizzPuzz(){
+    public void should_return_Buzz_given_5_when_fizzPuzz(){
         int number=5;
         FizzBuzz fizzBuzz=new FizzBuzz();
         String fizzBuzzResult= fizzBuzz.fizzBuzz(number);
         assertEquals("Buzz",fizzBuzzResult);
     }
     @Test
-    public void shuld_return_FizzBuzz_given_15_when_fizzPuzz(){
+    public void should_return_FizzBuzz_given_15_when_fizzPuzz(){
         int number=15;
         FizzBuzz fizzBuzz=new FizzBuzz();
         String fizzBuzzResult= fizzBuzz.fizzBuzz(number);
         assertEquals("FizzBuzz",fizzBuzzResult);
     }
+    @Test
+    public void should_return_Whizz_when_input_number_7(){
+        int number=7;
+        FizzBuzz fizzBuzz=new FizzBuzz();
+        String fizzBuzzResult= fizzBuzz.fizzBuzz(number);
+        assertEquals("Whizz",fizzBuzzResult);
+    }
+    
+
 }
