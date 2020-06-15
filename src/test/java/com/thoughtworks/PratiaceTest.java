@@ -4,7 +4,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 public class PratiaceTest {
     @Test
-    public void should_return_1_given_1_when_fizzPuzz(){
+    public void should_return_1_given_1_when_fizzBuzz(){
         int number=1;
         FizzBuzz fizzBuzz=new FizzBuzz();
         String fizzBuzzResult= fizzBuzz.fizzBuzz(number);
@@ -12,7 +12,7 @@ public class PratiaceTest {
     }
 
     @Test
-    public void should_return_Fizz_given_3_when_fizzPuzz(){
+    public void should_return_Fizz_given_3_when_fizzBuzz(){
         int number=3;
         FizzBuzz fizzBuzz=new FizzBuzz();
         String fizzBuzzResult= fizzBuzz.fizzBuzz(number);
@@ -27,7 +27,7 @@ public class PratiaceTest {
         assertEquals("Buzz",fizzBuzzResult);
     }
     @Test
-    public void should_return_FizzBuzz_given_15_when_fizzBuzz(){
+    public void should_return_FizzBuzz_given_60_when_fizzBuzz(){
         int number=60;
         FizzBuzz fizzBuzz=new FizzBuzz();
         String fizzBuzzResult= fizzBuzz.fizzBuzz(number);
@@ -48,7 +48,7 @@ public class PratiaceTest {
         assertEquals("FizzWhizz",fizzBuzzResult);
     }
     @Test
-    public void should_return_BuzzWhizz_when_input_number_70(){
+    public void should_return_BuzzWhizz_when_input_number_140(){
         int number=140;
         FizzBuzz fizzBuzz=new FizzBuzz();
         String fizzBuzzResult= fizzBuzz.fizzBuzz(number);
@@ -84,10 +84,10 @@ public class PratiaceTest {
     }
     @Test
     public void dont_ignore_number_divided_by_3_when_input_number_contain_7(){
-        int number=375;
+        int number=357;
         FizzBuzz fizzBuzz=new FizzBuzz();
         String fizzBuzzResult= fizzBuzz.fizzBuzz(number);
-        assertEquals("Fizz",fizzBuzzResult);
+        assertEquals("FizzWhizz",fizzBuzzResult);
     }
     @Test
     public void should_ignore_number_divided_by_5_when_input_number_contain_7(){
@@ -95,6 +95,13 @@ public class PratiaceTest {
         FizzBuzz fizzBuzz=new FizzBuzz();
         String fizzBuzzResult= fizzBuzz.fizzBuzz(number);
         assertEquals("Fizz",fizzBuzzResult);
+    }
+    @Test
+    public void should_return_17_when_input_number_17(){
+        int number=17;
+        FizzBuzz fizzBuzz=new FizzBuzz();
+        String fizzBuzzResult= fizzBuzz.fizzBuzz(number);
+        assertEquals("17",fizzBuzzResult);
     }
 
 }
