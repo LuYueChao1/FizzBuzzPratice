@@ -49,7 +49,7 @@ public class PratiaceTest {
     }
     @Test
     public void should_return_BuzzWhizz_when_input_number_70(){
-        int number=70;
+        int number=140;
         FizzBuzz fizzBuzz=new FizzBuzz();
         String fizzBuzzResult= fizzBuzz.fizzBuzz(number);
         assertEquals("BuzzWhizz",fizzBuzzResult);
@@ -84,10 +84,17 @@ public class PratiaceTest {
     }
     @Test
     public void dont_ignore_number_divided_by_3_when_input_number_contain_7(){
+        int number=375;
+        FizzBuzz fizzBuzz=new FizzBuzz();
+        String fizzBuzzResult= fizzBuzz.fizzBuzz(number);
+        assertEquals("Fizz",fizzBuzzResult);
+    }
+    @Test
+    public void should_ignore_number_divided_by_5_when_input_number_contain_7(){
         int number=75;
         FizzBuzz fizzBuzz=new FizzBuzz();
         String fizzBuzzResult= fizzBuzz.fizzBuzz(number);
-        assertEquals("FizzBuzz",fizzBuzzResult);
+        assertEquals("Fizz",fizzBuzzResult);
     }
 
 }

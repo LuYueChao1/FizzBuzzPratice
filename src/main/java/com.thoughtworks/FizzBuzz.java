@@ -14,6 +14,7 @@ public class FizzBuzz {
         }
         if(isNumContainSeven){
             isThreeTimes=num % 3==0;
+            isFiveTimes=false;
         }
         if(isNumContainThree){
             return "Fizz";
